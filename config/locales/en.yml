@@ -17,6 +17,9 @@ en:
     user: "User"
     sign_out: "Sign out"
     create: "Create new user"
+    books: "Books"
+    show_all_books: "Show all books"
+    add_new_books: "Add new books"
   news:
     cancelaccount: "Cancel Account"
     myaccount: "Cancel my acoount"
@@ -28,6 +31,8 @@ en:
     update: "update"
     follow: "Follow"
     unfollow: "Unfollow"
+    update: "Update"
+    add: "Add"
   link:
     profile: "Profile"
     setting: "Setting"

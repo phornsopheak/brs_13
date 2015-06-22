@@ -11,6 +11,7 @@ Rails.application.routes.draw do
     root "users#index"
     devise_for :users, only: [:create, :show, :destroy]
     resources :users
+    resources :books
   end
   resources :relationships, only: [:index, :create, :destroy]
 end

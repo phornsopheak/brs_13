@@ -18,6 +18,8 @@ en:
     sign_out: "Sign out"
     create: "Create new user"
     show_list_book: "Show all books"
+    books: "Books"
+    add_new_books: "Add new books"
   news:
     cancelaccount: "Cancel Account"
     myaccount: "Cancel my acoount"
@@ -26,7 +28,8 @@ en:
     currentpassword: "we need your current password to confirm your changes)"
   buttons:
     submit: "Submit"
-    update: "update"
+    update: "Update"
+    add: "Add"
     follow: "Follow"
     unfollow: "Unfollow"
   link:

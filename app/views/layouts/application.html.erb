@@ -12,6 +12,9 @@
   </head>
   <body>
     <%= render "layouts/header" %>
+    <div class="container-fluid pull-right">
+      <%= yield :search %>
+    </div>
     <div class="container">
       <% if notice %>
         <p class="alert alert-success"><%= notice %>

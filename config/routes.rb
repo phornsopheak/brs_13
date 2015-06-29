@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   get "users/:id/:status", to: "relationships#index", as: :users_with_status
   resources :books, only: [:index, :show]
   resources :authors, only: [:show]
-  resources :categories, only: [:show]
+  resources :categories, only: [:show, :index]
   devise_for :admins,
     class_name: "User",
     controllers: {sessions: "admins/sessions", only: [:create]},
@@ -18,10 +18,11 @@ Rails.application.routes.draw do
     resources :authors
     resources :categories
     resources :reviews, only: [:show]
-    resources :request_books, only: [:index, :destroy]
+    resources :request_books, only: [:index,:update ,:destroy]
   end
   resources :relationships, only: [:index, :create, :destroy]
-  resources :reviews
+  resources :reviews, only: [:show, :create, :edit, :update, :destroy]
+  resources :comments, only: [:create, :edit, :update, :destroy]
   resources :book_states, only: [:create, :update]
   resources :book_favorites, only: [:create, :destroy]
 end
